@@ -1,0 +1,63 @@
+html {
+    background-color: #000000;
+  }
+
+/* Base styles for body to set dark theme */
+body {
+    font-family: 'Arial', sans-serif; /* You can choose any other font you like */
+    background-color: #121212;
+    color: rgb(255, 255, 255); /* Setting the base text color to white */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start; /* Aligning items to the top */
+    height: 100vh;
+    justify-content: flex-start; /* Aligning items to the left */
+    padding: 20px; /* Some spacing from the window border */
+  }
+  
+  .container {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 20px; /* Adds spacing between consecutive .container elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Allows elements to be placed side-by-side */
+  }
+  
+  .container img {
+    max-width: 100px; /* Adjust based on your preference */
+    border-radius: 50%; /* Makes the picture round */
+    display: block;
+    margin: 10px auto; /* Center the image */
+  }
+
+  div {
+    color: rgb(255, 255, 255);
+  }
+  
+  button {
+    background-color: #3f51b5; /* Choosing a blue shade for contrast */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #283593; /* A darker shade of the original button color */
+  }
+  
+  /* Optional: Some utility classes for a bit more structure and beauty */
+  .container .title {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .container .subtitle {
+    margin-top: 5px;
+    color: #b0b0b0;
+  }
+  
