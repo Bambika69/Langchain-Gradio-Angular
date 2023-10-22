@@ -1,7 +1,15 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
 <nav>
+    <div *ngIf="userInfo" class="profile-container">
+        <img [src]="userInfo?.info?.picture" alt="User Image" class="profile-pic">
+        <span class="profile-name">{{ userInfo?.info?.name }}</span>
+        <button class="logout-btn" (click)="logout()">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        </button>
+    </div>
     <a routerLink="/">Home</a>
     <a routerLink="/page1">Page 1</a>
     <a routerLink="/page2">Page 2</a>
     <a routerLink="/page3">Page 3</a>
-  </nav>
+</nav>
   

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { lastValueFrom } from 'rxjs';
 import { GoogleApiService, UserInfo } from './google-api.service';
+import { UserService } from './user.service';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,18 @@ import { GoogleApiService, UserInfo } from './google-api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'frontend';
+  title = 'LLM Playground';
   
   mailSnippets: string[] = []
   userInfo?: UserInfo
 
-  constructor(private readonly googleApi: GoogleApiService) {
+  constructor(
+    private readonly googleApi: GoogleApiService,
+    private userService: UserService
+    ) {
     googleApi.userProfileSubject.subscribe( info => {
-      this.userInfo = info
+      this.userService.setUser(info);
+      this.userInfo = info;
     })
   }
 

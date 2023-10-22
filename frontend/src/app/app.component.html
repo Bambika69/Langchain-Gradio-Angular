@@ -1,15 +1,19 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <div *ngIf="isLoggedIn()">
-  <div class="container">Name: {{ userInfo?.info?.name }}</div>
-  <div class="container"><img src="{{ userInfo?.info?.picture }}"></div>
-  <div class="container">
-    <button (click)="getEmails()">List Emails</button>
-  </div>
-  <div class="container" *ngFor="let snippet of mailSnippets">
-    {{ snippet }}
-  </div>
-  <div class="container">
-    <button (click)="logout()">Logout from Google</button>
-  </div>
+</div>
+<img src="../logo.png" alt="">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <img src="assets/logo.png" alt="LLM Playground Logo" style="width: 45%; margin-right: 5%;">
+    <p style="width: 50%;">
+        This web application offers
+        users the unique opportunity to explore a variety 
+         of innovative models, each meticulously designed 
+         and tailored to meet specific needs. By navigating 
+         through the options available in the navbar, 
+         users can effortlessly switch between different 
+         models, making it a seamless experience to discover and 
+         engage with the diverse functionalities our platform 
+         has to offer.
+        </p>
 </div>

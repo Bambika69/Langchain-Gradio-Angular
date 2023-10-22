@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+body, nav, .profile-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 20px;
+  }
+
+  .logout-btn {
+    border-radius: 50%; /* Make it round */
+    background-color: #ec6555; /* A light grey background */
+    border: none; /* Remove default borders */
+    width: 40px; /* Set a width */
+    height: 40px; /* Set a height */
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: -50px;
+    left: 37px;
+    transform: translateX(-50%);
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+
+  .logout-btn i {
+    color: #070707; /* Set icon color to dark grey or any preferred color */
+    font-size: 20px; /* Adjust the size if needed */
+    bottom: 0px;
+  }
+
+  .profile-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Show the logout button when hovering over the profile container */
+  .profile-container:hover .logout-btn {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .logout-btn:hover {
+    background-color: #e0e0e0; /* Darker grey for hover effect */
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ec6555;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  
+  .profile-name {
+    margin-top: 0px;
+    font-size: 14px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center; /* Vertically align items in the navbar */
+    justify-content: space-between; /* Space out main areas */
+    padding: 10px 20px; /* Add some padding to the navbar */
+    border: 4px solid #8cd4b9;
+    border-radius: 10px;
+    box-shadow: 0px 3px 20px #8cd4b9; /* Horizontal offset, Vertical offset, Blur radius, Spread radius and color */
+  }
+  
+  nav a, nav button {
+    margin-left: 15px; /* Space between nav items */
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Or any other color */
+  }
