@@ -61,7 +61,7 @@
   }
   
   .profile-name {
-    margin-top: 0px;
+    margin-top: 5px;
     font-size: 14px;
   }
   
@@ -114,4 +114,17 @@
   display: block;    /* Allows the margin to work */
   margin: 0 auto;    /* Centers the image inside the <a> tag */
   border: 4px solid #ec6555;
+}
+
+.nav-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Removes default link styles */
+  color: black; /* Text color */
+}
+
+.nav-btn-text {
+  font-size: 14px;      /* Adjust size as needed */
+  margin-top: 5px;      /* Space between the image and the text */
 }

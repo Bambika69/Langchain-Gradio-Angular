@@ -1,5 +1,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bangers&display=swap">
 <nav>
+    <a routerLink="/" class="nav-btn-container">
+        <img src="assets/home.jpg" alt="Home Button" class="round-btn">
+        <span class="nav-btn-text">Home</span>
+    </a>
+    <a routerLink="/page1" class="nav-btn-container">
+        <img src="assets/llama.png" alt="LLaMA Model" class="round-btn">
+        <span class="nav-btn-text">LLaMA</span>
+    </a>
+    <a routerLink="/page2" class="nav-btn-container">
+        <img src="assets/llama2.png" alt="LLaMA2 Model" class="round-btn">
+        <span class="nav-btn-text">LLaMA II</span>
+    </a>
+    <a routerLink="/page3" class="nav-btn-container">
+        <img src="assets/dolly.png" alt="Dolly Model" class="round-btn">
+        <span class="nav-btn-text">Dolly</span>
+    </a>
     <div *ngIf="userInfo" class="profile-container">
         <img [src]="userInfo?.info?.picture" alt="User Image" class="profile-pic">
         <span class="profile-name">{{ userInfo?.info?.name }}</span>
@@ -7,9 +23,5 @@
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
         </button>
     </div>
-    <a routerLink="/">Home</a>
-    <a routerLink="/page1"><img src="assets/llama.png" alt="Dolly Model" class="round-btn"></a>
-    <a routerLink="/page2"><img src="assets/llama2.png" alt="Dolly Model" class="round-btn"></a>
-    <a routerLink="/page3"><img src="assets/dolly.png" alt="Dolly Model" class="round-btn"></a>
 </nav>
   
