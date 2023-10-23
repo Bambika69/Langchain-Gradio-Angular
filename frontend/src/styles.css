@@ -128,3 +128,24 @@
   font-size: 14px;      /* Adjust size as needed */
   margin-top: 5px;      /* Space between the image and the text */
 }
+
+.gradio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin-bottom: 50px;
+}
+
+.gradio-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 80%;
+  height: 600px;  
+  border: 4px solid #8cd4b9;
+  box-shadow: 0px 3px 50px #8cd4b9;
+}

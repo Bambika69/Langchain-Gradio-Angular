@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { client } from '@gradio/client';
 
 @Component({
   selector: 'app-page2',
