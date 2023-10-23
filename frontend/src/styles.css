@@ -1,7 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
-body, nav, .profile-name {
+  /* You can add global styles to this file, and also import other style files */
+  body, nav, .profile-name {
     font-family: 'JetBrains Mono', monospace;
     font-size: 20px;
+  }
+
+  body {
+    background-color: #ffffff; /* Replace with your desired color */
   }
 
   .logout-btn {
@@ -53,7 +57,7 @@ body, nav, .profile-name {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #ec6555;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px #8cd4b9;
   }
   
   .profile-name {
@@ -76,3 +80,38 @@ body, nav, .profile-name {
     text-decoration: none; /* Remove underline from links */
     color: black; /* Or any other color */
   }
+
+  .content {
+    display: flex;
+    align-items: center; /* To vertically center align the elements */
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.logo {
+    /* Your image styles here */
+    width: 50%;
+    max-width: 500px; /* Assign a maximum width to the image */
+    flex-shrink: 0; /* Prevent the image from shrinking more than the specified width */
+}
+
+.description {
+    flex: 1; /* Take the remaining space */
+    padding-left: 20px; /* Add some spacing between the line and the text */
+}
+
+.description p {
+    border-left: 4px solid #8cd4b9; /* Drawing the line beside the text */
+    padding-left: 20px; /* Some space between the border and the text */
+    display: inline-block; /* To make sure the border wraps around the content only */
+    margin-left: 20px; /* Space between the image and the line */
+}
+
+.round-btn {
+  width: 40px;       /* Adjust this size as needed */
+  height: 40px;      /* Adjust this size as needed */
+  border-radius: 50%;/* Makes the image round */
+  object-fit: cover; /* Ensures the image covers the full area */
+  display: block;    /* Allows the margin to work */
+  margin: 0 auto;    /* Centers the image inside the <a> tag */
+  border: 4px solid #ec6555;
+}
