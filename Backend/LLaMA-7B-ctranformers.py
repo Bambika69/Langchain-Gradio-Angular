@@ -22,5 +22,6 @@ iface = gr.Interface(
     live=False,
     theme='Bandika/agyrem'
 )
+
 app = iface.launch(server_port=1781)
 CORS(app)
